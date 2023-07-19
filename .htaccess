@@ -1,0 +1,19 @@
+RewriteEngine On
+
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/blauaeugig-reise.de/Impressum.html$ [NC]
+RewriteRule ^(.*)$ /blauaeugig-reise.de/Impressum [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/blauaeugig-reise.de/data-protection.html$ [NC]
+RewriteRule ^(.*)$ /blauaeugig-reise.de/data-protection [R=301,L]
+
+
+
+
+
+

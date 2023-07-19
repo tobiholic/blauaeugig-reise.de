@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>blauäugig um die Welt | Begegnungen, Reise, Podcast</title>
+        <link rel="icon" type="image/x-icon" href="/resource/favicon2.png">
+        <meta name="keywords" content="podcast, Reisen, blauäugig, Reisegeschichten, Asien, Australien, Backpacking, Geschichten,">
+        <meta name="description" content="Ein Podcast übers Reisen. Mit Tobi, und der restlichen Welt.">
+        <meta name="author" content="Tobias Schmid">
+        <link rel="icon" href="" type="image/x-icon">
+        <!--bootstrap CSS-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style_blauaeugig.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- Google -->
+        <meta name="google-site-verification" content="13UcnVOD-16Cxkjkn91efR74nIBhnINvO1RokPgkH48">
+    </head>
+    <body>
+        <main class="lh-md">
+            <!-- Stage-one -->
+            <section class="stage-one" id="stage-one">
+                <!-- Button up/down -->
+                <div class="scroll-to-top">
+                    <button 
+                    type="button" 
+                    id="button-up"
+                    class="btn btn-light position-fixed end-0 d-none d-lg-block"
+                    >
+                    <i class="bi bi-arrow-up-circle-fill h4" id="pic-up"></i>
+                    </button>
+                </div>
+
+                <div class="scroll-down-to-next-section">
+                    <button 
+                    type="button"
+                    id="button-down"
+                    class="btn btn-light position-fixed end-0 bottom-0  d-none d-lg-block"
+                    >
+                    <i class="bi bi-arrow-down-circle-fill h4" id="pic-down"></i>
+                    </button>
+                </div>
+
+        
+                <!--NavBar-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary text-center align-items-center justify-content-center">
+                    <div class="container text-center justify-content-center">
+                        <!--Toggler Hamburger button-->
+                        <button 
+                            class="navbar-toggler text-center justify-content-center align-items-center" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation"
+                            >
+                            <span class="navbar-toggler-icon"></span>
+                            <div class="d-sm-inline d-lg-none justify-content-center">
+                                <img src="/resource/lolo-blau-final.svg" id="logo-small-device">
+                            </div>
+                        </button>
+                        
+                        <!-- navbar -->
+                        <div class="collapse navbar-collapse justify-content-center align-items-center text-center m-0 m-md-3" id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center me-lg-5" id="navbar-collapse-design">
+                                <li class="nav-nav">
+                                    <a class="nav-link fs-5 m-0 m-lg-4 text-black" href="#stage-two">Hören</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 m-0 m-lg-4 text-black" href="#stage-three">Wer & Wo bin ich?</a>
+                                </li>
+                                <li class="nav-brand d-none d-lg-inline">
+                                    <a href="#stage-one"><img class="img-fluid mb-3 text-black" id="logo-blau" src="/resource/lolo-blau-final.svg"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 m-0 m-lg-4 text-black" href="#stage-four">Blaupost</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 m-0 m-lg-4 text-black" href="#stage-five">Support</a>
+                                </li>
+                            </ul>                          
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container text-center" id="reinhören">
+                    <div class="pt-3">
+                        <h1 class="text-light animation-fly-in mb-lg-4 pt-lg-5 mt-lg-5 " id="Titel">Der <span class="text-warning">Podcast</span> rund ums Reisen. <br>
+                            Mit Tobi, und der restlichen <span class="text-warning">Welt.</span></h1>
+                    </div>
+                    <div class="position-absolute align-bottom bottom-0 start-50 translate-middle mb-lg-5">
+                        <a class="btn btn-outline-light btn-lg shadow-lg rounded-5 mb-sm-5" 
+                        id="button-reinhören"
+                        href="https://open.spotify.com/show/3a3tQzGVkPAJp96WFFPoJo" 
+                        role="button" 
+                        target="_blank"
+                        >
+                        DIREKT REINHÖREN
+                    </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stage two, Hören-->        
+            <section class="d-flex justify-content-center" id="stage-two">
+                <div class="container flex-column">
+                    <h1 class="text-center pt-3 pt-lg-0 pb-md-5 animation-viewpoint fadeInDown in-view"><span class="text-primary">Aktuelle </span>Folge hören</h1>
+
+                    <div class="d-flex justify-content-center">
+                        <!-- left column in row  -->
+                        <div class="col d-flex flex-column justify-content-center animation-viewpoint fadeInLeft in-view" id="carousel">
+                            
+                            <div id="carouselExampleIndicators" class="carousel slide shadow-lg" style="border-radius:12px" >
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
+                                  class="active" 
+                                  aria-current="true" 
+                                  aria-label="Slide 1">
+                                  </button>
+
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" 
+                                  aria-label="Slide 2">
+                                  </button>
+
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" 
+                                  aria-label="Slide 3">
+                                  </button>
+                                </div>
+
+                                <!-- Content Slider -->
+                                <div class="carousel-inner" style="border-radius:12px" >
+                                  <div class="carousel-item active img-fluids">
+                                    <img src="/resource/content-slide-hören/pic-love.JPG" class="d-block w-100" alt="pic-love">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="/resource/content-slide-hören/pic-highlands.JPG" class="d-block w-100" alt="pic-highlands">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="/resource/content-slide-hören/pic-freedom.JPG" class="d-block w-100" alt="pic-freedom">
+                                  </div>                                  
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- right column in row -->
+                        <div class="col d-none d-lg-inline d-flex me-5 pe-5 animation-viewpoint fadeInRight in-view">
+                            <h2 class="mb-1">EP009 • Dinge, die man vermisst</h2> 
+                            <h5 class="fw-light fst-italic mb-3">Mit Caro und Marco</h5>
+                            <p class="lh-md text-justify"><span class="text-primary">Heimatbesuch</span> - Die Frau mit der erotischen Stimme aus EP001 ist wieder da! Immer wieder großartig, seine Menschen um sich zu haben. Mit Caro und Marco, die mich zwei Wochen in Malaysia besuchen, gehen wir die Punkte durch, die man nach langer Zeit auf Reisen am meisten vermisst. Da Marco kaum Dinge fehlen, zählt er auf was er so gar nicht aus Deutschland misst. Interessante Mischung, die wir am Strand auf Pulau Tioman (Malaysia) ernsthaft diskutieren. 
+                            <br><br>
+                            <span class="text-primary">O’bacht:</span> Bis zum Ende hören, diesmal sind auch ein paar Outtakes dabei!
+                            <br> <br>
+                            <span class="text-primary">Randnotiz:</span> Über meine neue Rubrik BLAUPOST freue ich mich in nächster Zeit auf jede Reisegeschichte von euch, die ich in einzelnen Folgen für uns festhalten werde. Blauäugig? Auf gehts, get in   touch!</p>
+                        </div>
+                    </div>
+                    <div class="d-flex pt-5 justify-content-center animation-viewpoint fadeInUp in-view">
+                        <iframe 
+                        class="d-flex d-none d-sm-block"
+                        style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/episode/1wbNqZvkOjMFmBjMCnyCSd?utm_source=generator&theme=0&t=0" 
+                        width="86%" 
+                        height="155" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy"
+                        >
+                        </iframe>
+                    </div>
+                    <h2 class="mb-1 d-sm-none text-center">EP009 • Dinge, die man vermisst</h2> 
+                    <h5 class="fw-light fst-italic mb-3 d-sm-none text-center">Mit Caro und Marco</h5>
+                </div>
+            </section>
+
+        
+            <!-- Stage three, Wer&wo bin ich--> 
+            <section class="d-flex text-light" id="stage-three">
+                <div class="container" id="stage-three-100">
+                    <h1 class="text-center pt-5 pb-3 pb-lg-5  d-lg-block animation-viewpoint rubberBund in-view"><span class="text-warning">Wer & Wo </span> bin ich?</h1>
+
+                    <!-- Wer bin ich? -->
+                    <div class="row d-flex justify-content-center p-0">
+                        <div class="col-sm-8 col-md-6 text-start">
+                            <div>
+                                <p class="d-inline lh-sm d-none d-sm-block">Ich bin der <span class="text-warning fw-bold">Tobi</span>, 29, aus Nürnberg. Oktober 2018 habe ich meinen Job gekündigt, meine Wohnung aufgelöst und mich von meinen Liebsten für eine ungewisse Zeit verabschiedet um mir die <span class="text-warning fw-bold">Welt</span> anzuschauen und für eine längere Zeit zu Reisen. Neben ein paar Shirts und einer Zahnbürste, hat noch ein <span class="text-warning fw-bold">Mikrofon</span> in meinem Rucksack Platz gefunden. Nun versuche ich, spannende Geschichten von anderen Reisenden und Einheimischen einzufangen und in einzelnen Podcastfolgen festzuhalten. Hört sich gut an? Dann lass uns mal rein<a class="no-deco" href="#stage-two"><span class="text-warning fw-bold" >hören!</span></a></p>
+
+                                <div class="text-center mb-3">
+                                    <p class="d-inline lh-sm d-sm-none">Ich bin der <span class="text-warning fw-bold">Tobi</span>, 29, aus Nürnberg. Oktober 2018 habe ich meinen Job gekündigt, meine Wohnung aufgelöst und mich von meinen Liebsten für eine ungewisse Zeit verabschiedet um mir die <span class="text-warning fw-bold">Welt</span> anzuschauen und für eine längere Zeit zu Reisen. Neben ein paar Shirts und einer Zahnbürste, hat noch ein <span class="text-warning fw-bold">Mikrofon</span> in meinem Rucksack Platz gefunden. Nun versuche ich, spannende Geschichten von anderen Reisenden und Einheimischen einzufangen und in einzelnen Podcastfolgen festzuhalten. Hört sich gut an? Dann lass uns mal rein<a class="no-deco" href="#stage-two"><span class="text-warning fw-bold" >hören!</span></a></p>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <p class="mt-4 d-none d-lg-block"> <span class="text-warning">Wo</span> bin ich:</p>
+                            
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91488.20299229401!2d4.683412639309407!3d51.56275673824939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6a1b47e17d16d%3A0xe5057ea284d71b41!2sBreda!5e0!3m2!1sde!2snl!4v1680622839839!5m2!1sde!2snl" 
+                                class="mt-2 shadow-lg justify-content-bottom mx-auto overflow-scroll d-none d-lg-block"
+                                width="630" 
+                                height="300" 
+                                style="border-radius:12px" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="card bg-dark mx-auto shadow-lg d-none d-sm-block" style="width: 26rem;">
+                                <img src="/resource/pic-card-tobi.jpg" class="card-img-top img-fluid" alt="pic Tobi auf camper">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-2" id="touch">let's get in touch!</h5>
+                                  <!-- linkedin -->
+                                  <a href="https://www.linkedin.com/in/tobias-schmid-491889169/" target="_blank" id="icon-linkedin" class="btn btn-outline-warning p-1 ps-2 pe-2"><i class="bi bi-linkedin bi-5x"></i></a>
+                                  <!-- facebook -->
+                                  <a href="https://www.facebook.com/tobi.schmid.7" target="_blank" id="icon-facebook" class="btn btn-outline-warning p-1 ps-2 pe-2 m-1"><i class="bi bi-facebook"></i></a>
+                                  <!-- instagram -->
+                                  <a href="https://www.instagram.com/blauaeugig_podcast/" target="_blank" id="icon-instagram" class="btn btn-outline-warning p-1 ps-2 pe-2"><i class="bi bi-instagram"></i></a>
+                                  <!-- mail -->
+                                  <a href="mailto:blau@blauaeugig-reise.de" target="_blank" id="icon-mail" class="btn btn-outline-warning p-1 ps-2 pe-2  m-1"><i class="bi bi-envelope-at-fill"></i></a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- mobile version -->
+                        <div class="d-flex justify-content-center mb-5">
+                            <div class="col text-center d-sm-none">
+                                <div class="card bg-dark mx-auto shadow-lg" style="width: 18rem;">
+                                    <img src="/resource/pic-card-tobi.jpg" class="card-img-top img-fluid" alt="pic Tobi auf camper">
+                                    <div class="card-body">
+                                      <h5 class="card-title mb-2" id="touch">let's get in touch!</h5>
+                                      <!-- linkedin -->
+                                      <a href="https://www.linkedin.com/in/tobias-schmid-491889169/" target="_blank" id="icon-linkedin" class="btn btn-outline-warning p-1 ps-2 pe-2"><i class="bi bi-linkedin bi-5x"></i></a>
+                                      <!-- facebook -->
+                                      <a href="https://www.facebook.com/tobi.schmid.7" target="_blank" id="icon-facebook" class="btn btn-outline-warning p-1 ps-2 pe-2 m-1"><i class="bi bi-facebook"></i></a>
+                                      <!-- instagram -->
+                                      <a href="https://www.instagram.com/blauaeugig_podcast/" target="_blank" id="icon-instagram" class="btn btn-outline-warning p-1 ps-2 pe-2"><i class="bi bi-instagram"></i></a>
+                                      <!-- mail -->
+                                      <a href="mailto:blau@blauaeugig-reise.de" target="_blank" id="icon-mail" class="btn btn-outline-warning p-1 ps-2 pe-2  m-1"><i class="bi bi-envelope-at-fill"></i></a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Stage-four, Blaupost--> 
+            <section class="d-flex" id="stage-four">
+                <div class="container">
+                        <h1 class="text-center pb-3 mt-4 mt-sm-0"><span class="text-primary">Blaupost</span><span class="text-primary"> & Bonus</span> um den Globus</h1>
+                        <p class="text-center lh-sm">Wie schon öfters erwähnt. Hierbei handelt es sich nicht um meinen Podcast, sondern um <span class="text-primary">unseren Podcast.</span> Quasi mit dir, für uns. Das heißt, ohne dich läuft der ganze Spaß auch nicht! Selbstgespräche sind zwar machbar, aber nicht wirklich spannend. Deswegen freue ich mich über jede <a class="no-deco text-primary" href="#stage-five">Unterstützung</a> von dir! </p>
+                    
+                    <div class="d-none d-sm-block">
+                        <div class="d-flex justify-content-between mt-5">
+                            <!-- Card 1 Paimanee -->
+                            <div class="card shadow-lg animation-viewpoint fadeInLeftBig in-view card1 d-none d-sm-block" style="width: 23rem;">
+                                <img src="/resource/cards-bonus/paimee.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title text-center">Ein Abend mit der Paimanee Familie</h5>
+                                <iframe class="pt-3 d-none d-sm-block" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0bVtzPN8UdXh1HMIgjnsGg?utm_source=generator&theme=0" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <!-- Card 2 Hozrida -->
+                            <div class="card shadow-lg animation-viewpoint fadeInLeftBig in-view card2 d-none d-sm-block" style="width: 23rem;">
+                                <img src="/resource/cards-bonus/hozrida.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title text-center">Aufgesammelt von Hozrida</h5>
+                                <iframe class="pt-3 d-none d-sm-block" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6pxRs0F1ejsmBoKn1XkZPg?utm_source=generator&theme=0" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <!-- Card 3 airport -->
+                            <div class="card shadow-lg animation-viewpoint fadeInLeftBig in-view card3 d-none d-sm-block" style="width: 23rem;">
+                                <img src="/resource/cards-bonus/airpot-singapure.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center ">One-Night-Stand am Flughafen</h5>
+                                    <iframe class="pt-3 d-none d-sm-block"  style="border-radius:12px" src="https://open.spotify.com/embed/episode/15yDw1c4qsfatDfUWZRsRB?utm_source=generator&theme=0" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Version -->
+                    <div id="carouselExample" class="carousel slide pb-5 pb-sm-0 d-sm-none">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/resource/hozrida-mobil.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/resource/paimanee-mobil.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/resource/airport-mobil.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+
+
+                </div>                
+            </section>
+
+            
+            <!-- Stage five, Support--> 
+            <section class="d-flex text-light text-center pt-4" id="stage-five">
+                <div class="container">
+                    <h1 class="text-center text-warning mb-sm-5" >Support</h1>
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/resource/Join an episode.svg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                              <h5 class="mb-5 mb-sm-0">Join an episode!</h5>
+                              <p class="d-none d-md-block">Du hast eine abgefahrene Erfahrung auf deiner Reise gemacht, die wir unbedingt in einer Folge festhalten müssen? Ich freu mich drauf! </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/resource/Themenvorschlag.svg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="mb-5 mb-sm-0">Themenvorschlag!</h5>
+                              <p class="d-none d-md-block">Du hast ein spannendes, wichtiges oder lustiges Thema, über das ich in meiner nächsten Folge sprechen soll? Dann lass mal hören!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/resource/Feedback.svg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="mb-5 mb-sm-0">Feedback!</h5>
+                              <p class="d-none d-md-block">Ob per E-Mail, durch eine iTunes-Rezension, über instagram oder auch per Kontaktformular. Ich freue mich über jedes Feedback von dir!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer" class="container">
+                <p class="text-center pt-4 font-monospace text-secondary">Mit bester Unterstützung meines Podcastpaten <a href="https://es-ist-ein-krauss.de/" target="_blank">juekr.</a></p>
+
+                <div class="text-center pt-1">
+                    <a href="https://www.linkedin.com/in/tobias-schmid-491889169/" target="_blank" id="icon-linkedin" class="btn btn-warning p-1 ps-2 pe-2"><i class="bi bi-linkedin bi-5x"></i></a>
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com/tobi.schmid.7" target="_blank" id="icon-facebook" class="btn btn-warning p-1 ps-2 pe-2 m-1"><i class="bi bi-facebook"></i></a>
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com/blauaeugig_podcast/" target="_blank" id="icon-instagram" class="btn btn-warning p-1 ps-2 pe-2"><i class="bi bi-instagram"></i></a>
+                    <!-- mail -->
+                    <a href="mailto:blau@blauaeugig-reise.de" target="_blank" id="icon-mail" class="btn btn-warning p-1 ps-2 pe-2  m-1"><i class="bi bi-envelope-at-fill"></i></a>
+                </div>
+                <div class="text-center p-4 font-monospace">
+                    <a href="data-protection" class="no-deco text-secondary" id="button-Datenschutz">Datenschutz  |</a>
+                    <a href="Impressum" class="no-deco text-secondary" id="button-impressum">  Impressum</a>
+                </div>
+            </footer>
+        </main>
+
+        <!--bootstrap js/popper-->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="blauaeugig.js"></script>
+    </body>
+</html>

@@ -1,0 +1,274 @@
+/* real deal */
+
+/* Bausteine */
+
+  /* no-decoration */
+  .no-deco {
+    text-decoration: none;
+  }
+
+  a {
+    color: #FBC108;
+  }
+
+  a:hover {
+    color: #FBC108;
+    transform: scale(1.10);
+  }
+
+/* Animation */
+
+
+  /* Stage-one Animation*/
+
+  @keyframes fly-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animation-fly-in {
+    animation-name: fly-in;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  /* Stage-two Animation */
+
+ .fadeInDown.in-view {
+  animation: fadeInDown;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;  
+ }
+
+ .fadeInLeft.in-view {
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;  
+ }
+
+ .fadeInRight.in-view {
+  animation: fadeInRight;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;  
+ }
+
+ .fadeInUp.in-view {
+  animation: fadeInUp;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;  
+ }
+
+   /* Stage-three Animation */
+
+   .rubberBund.in-view {
+    animation: rubberBand;
+    animation-duration: 1.5s;
+    animation-delay: 1.0s;
+    animation-fill-mode: both;
+    backface-visibility: hidden;  
+   }
+
+  /* Stage-four Animation */
+
+   .fadeInLeftBig.in-view.card1 {
+    animation: fadeInLeftBig;
+    animation-duration: 1.9s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+    animation-timing-function:cubic-bezier(.12,.6,.58,1.17);
+   }
+
+   .fadeInLeftBig.in-view.card2 {
+    animation: fadeInLeftBig;
+    animation-duration: 1.9s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+    animation-timing-function: cubic-bezier(.12,.6,.58,1.17);
+   }
+
+   .fadeInLeftBig.in-view.card3 {
+    animation: fadeInLeftBig;
+    animation-duration: 1.9s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+    animation-timing-function: cubic-bezier(.12,.6,.58,1.17);
+   }
+
+  /* Nav link animation */
+  .nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.9px;
+    bottom: -0.1px;
+    left: 0;
+    background-color:#2D9FE8;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-out;
+  }
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+
+
+/*backgrounds*/
+
+#stage-one {
+  background-image: url(/resource/Titelbild-hoeren-1920_1200.png);
+  background-position: center;
+  min-height: 100vh;
+  object-fit: cover; 
+  background-repeat:no-repeat;
+}
+
+#stage-two {
+  min-height: 100vh;
+  object-fit: cover;
+  background-repeat:no-repeat;
+  align-items: center!important;
+}
+
+#stage-three {
+  min-height: 100vh;
+  background-color: #003757;
+  align-items: center!important;
+}
+
+#stage-four {
+  min-height: 100vh;
+  object-fit: cover;
+  align-items: center!important;
+}
+
+#stage-five {
+  background-color: #003757;
+  align-items: center!important;
+}
+
+#footer {
+  background-color: black;
+  max-width: 100%;
+}
+
+/* Button up-down / back */
+#button-up, #button-down {
+  border-radius: 20%;
+  margin: 12px;
+  opacity: 40%;
+  border: solid 2px;
+  z-index: 1000;
+  display: none;
+}
+
+#button-down:hover, #button-up:hover
+{
+  opacity: 100%;
+  transform: scale(1.08);
+}
+
+#btn-back {
+  opacity: 50%;
+}
+
+#btn-back:hover  {
+  opacity: 100%;
+  transform: scale(1.20);
+}
+
+/* Stage-one */
+
+/* Button reinhören */
+  #button-reinhören {
+    opacity: 90%;
+  }
+
+  #button-reinhören:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+  }
+
+/* logo Homepage*/
+#logo-blau {
+  width: 16rem;
+  height: auto;
+}
+
+/* logo small device */
+#logo-small-device {
+  width: 16rem;
+  height: auto;
+  display: inline;
+}
+
+/* Stage-two */
+
+#carouselExampleIndicators, #carousel {
+  height: 400px;
+  width: 400px;
+  align-items: center!important;
+}
+.carousel-inner div img {
+  height: 400px;
+  width: 400px;
+}
+
+/* stage-three */
+
+/* icons card */
+#icon-linkedin, #icon-facebook, #icon-mail, #icon-instagram {
+  font-size: 1.3rem;
+}
+
+#icon-linkedin:hover, #icon-facebook:hover, #icon-mail:hover, #icon-instagram:hover  {
+  transform: scale(1.2);
+}
+
+/* stage-four */
+
+
+/* stage-five */
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(70%);
+}
+
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
