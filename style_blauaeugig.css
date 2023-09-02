@@ -136,7 +136,7 @@
 /*backgrounds*/
 
 #stage-one {
-  background-image: url(/resource/Titelbild-hoeren-1920_1200.png);
+  background-image: url(resource/Titelbild-hoeren-1920_1200.png);
   background-position: center;
   min-height: 100vh;
   object-fit: cover; 
